@@ -5,6 +5,7 @@ export interface Skill {
   filename: string;
   version: string;
   icon: string; // Lucide icon name
+  comingSoon?: boolean;
 }
 
 export const skills: Skill[] = [
@@ -25,6 +26,7 @@ export const skills: Skill[] = [
     filename: "onelayer-doc-creation.skill",
     version: "1.0",
     icon: "FileText",
+    comingSoon: true,
   },
   {
     id: "onelayer-doc-extraction",
@@ -34,5 +36,6 @@ export const skills: Skill[] = [
     filename: "onelayer-doc-extraction.skill",
     version: "1.0",
     icon: "ScanSearch",
+    comingSoon: true,
   },
 ];
