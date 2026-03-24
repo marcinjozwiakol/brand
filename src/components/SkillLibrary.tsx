@@ -34,7 +34,7 @@ export default function SkillLibrary() {
       className="py-24 sm:py-32 px-6 sm:px-12 bg-white"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-dark tracking-tight">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-dark tracking-tight">
           Claude Code{" "}
           <span className="text-orange">Skills</span>
         </h2>

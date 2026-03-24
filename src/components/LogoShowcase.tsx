@@ -111,7 +111,7 @@ export default function LogoShowcase() {
   return (
     <section id="logos" ref={sectionRef} className="py-24 sm:py-32 px-6 sm:px-12">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-dark tracking-tight">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-dark tracking-tight">
           Logo<span className="text-orange">type</span>
         </h2>
         <p className="mt-4 text-gray text-base sm:text-lg max-w-xl">

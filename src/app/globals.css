@@ -2,6 +2,22 @@
 
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Maison';
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/Maison-Medium.woff2') format('woff2'),
+       url('/fonts/Maison-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Maison';
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/Maison-Bold.woff2') format('woff2'),
+       url('/fonts/Maison-Bold.woff') format('woff');
+}
+
 @theme inline {
   --color-background: #F5F5F5;
   --color-foreground: #1E1E1E;
@@ -32,6 +48,7 @@
   --color-offwhite: #F5F5F5;
   --color-white: #FFFFFF;
   --font-sans: "Inter", Arial, sans-serif;
+  --font-heading: "Maison", "Inter", Arial, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
 

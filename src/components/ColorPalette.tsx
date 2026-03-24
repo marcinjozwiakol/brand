@@ -151,7 +151,7 @@ export default function ColorPalette() {
       <div className="max-w-7xl mx-auto">
         <h2
           ref={headingRef}
-          className="text-4xl sm:text-5xl lg:text-6xl font-bold text-dark tracking-tight"
+          className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-dark tracking-tight"
         >
           Color <span className="text-orange">Palette</span>
         </h2>

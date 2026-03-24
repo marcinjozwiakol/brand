@@ -9,17 +9,17 @@ gsap.registerPlugin(ScrollTrigger);
 const hierarchy = [
   {
     level: "Title",
-    font: "Inter Bold",
+    font: "Maison Bold",
     size: "36–48pt",
     example: "Bold Statements",
-    className: "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight",
+    className: "text-4xl sm:text-5xl lg:text-6xl font-bold font-heading tracking-tight",
   },
   {
     level: "Section",
-    font: "Inter Bold",
+    font: "Maison Bold",
     size: "20–28pt",
     example: "Section Heading",
-    className: "text-2xl sm:text-3xl font-bold tracking-tight",
+    className: "text-2xl sm:text-3xl font-bold font-heading tracking-tight",
   },
   {
     level: "Body",
@@ -64,12 +64,12 @@ export default function TypographyShowcase() {
       className="py-24 sm:py-32 px-6 sm:px-12 bg-white"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-dark tracking-tight">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-dark tracking-tight">
           Typo<span className="text-emerald">graphy</span>
         </h2>
         <p className="mt-4 text-gray text-base sm:text-lg max-w-xl">
-          Inter for body and headings. Maison for internal heading use — contact
-          the brand team for access. Arial as universal fallback.
+          Maison for display and headings. Inter for body, labels, and captions.
+          Arial as universal fallback.
         </p>
 
         <div className="mt-12 space-y-0 divide-y divide-gray/10">
@@ -102,9 +102,9 @@ export default function TypographyShowcase() {
           <p className="text-white/50 text-sm font-medium uppercase tracking-wider mb-4">
             Brand Statement
           </p>
-          <p className="font-bold text-white text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight">
-            Where precision meets{" "}
-            <span className="text-orange">purpose.</span>
+          <p className="font-bold font-heading text-white text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight">
+            Zero Trust Security and Asset Management for{" "}
+            <span className="text-white font-extrabold">Private 5G/LTE Devices</span>
           </p>
         </div>
       </div>

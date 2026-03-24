@@ -64,13 +64,13 @@ export default function Hero() {
         <div className="max-w-4xl">
           <span
             ref={line1Ref}
-            className="block text-white/90 text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight"
+            className="block text-white/90 text-3xl sm:text-5xl lg:text-6xl font-bold font-heading tracking-tight leading-tight"
           >
             Brand is the
           </span>
           <span
             ref={line2Ref}
-            className="block text-white font-bold text-6xl sm:text-8xl lg:text-[7rem] leading-[0.95] mt-2"
+            className="block text-white font-bold font-heading text-6xl sm:text-8xl lg:text-[7rem] leading-[0.95] mt-2"
           >
             <span className="text-orange">Experience.</span>
           </span>

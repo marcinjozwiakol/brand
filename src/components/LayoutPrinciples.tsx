@@ -91,7 +91,7 @@ export default function LayoutPrinciples() {
       className="py-24 sm:py-32 px-6 sm:px-12"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-dark tracking-tight mb-4">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-dark tracking-tight mb-4">
           Layout{" "}
           <span className="text-emerald">Principles</span>
         </h2>
@@ -118,7 +118,7 @@ export default function LayoutPrinciples() {
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-3">
                     <div className={`w-3 h-3 rounded-full ${p.accent}`} />
-                    <h3 className="text-xl sm:text-2xl font-bold text-dark">
+                    <h3 className="text-xl sm:text-2xl font-bold font-heading text-dark">
                       {p.title}
                     </h3>
                   </div>
