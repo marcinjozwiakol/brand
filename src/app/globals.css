@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #F5F5F5;
+  --color-foreground: #1E1E1E;
+  --color-orange: #FF4801;
+  --color-orange-50: #FEE9E6;
+  --color-orange-100: #FFCBB9;
+  --color-orange-200: #FFAA8B;
+  --color-orange-300: #FF875C;
+  --color-orange-400: #FF6B36;
+  --color-orange-500: #FF4F06;
+  --color-orange-600: #FF4801;
+  --color-orange-700: #F14100;
+  --color-orange-800: #E33900;
+  --color-orange-900: #CB2800;
+  --color-emerald: #004734;
+  --color-emerald-50: #DFF1EE;
+  --color-emerald-100: #B1DDD4;
+  --color-emerald-200: #7FC7B9;
+  --color-emerald-300: #4EB09D;
+  --color-emerald-400: #2AA08A;
+  --color-emerald-500: #0D8F77;
+  --color-emerald-600: #0B826B;
+  --color-emerald-700: #07725C;
+  --color-emerald-800: #03634E;
+  --color-emerald-900: #004734;
+  --color-dark: #1E1E1E;
+  --color-gray: #878787;
+  --color-offwhite: #F5F5F5;
+  --color-white: #FFFFFF;
+  --font-sans: "Inter", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-offwhite);
+  color: var(--color-dark);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Noise overlay — pure CSS, no external SVG */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+.btn-magnetic {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.btn-magnetic:hover {
+  transform: scale(1.03) translateY(-1px);
+}
+
+section {
+  scroll-margin-top: 5rem;
+}
+
+::selection {
+  background: var(--color-orange);
+  color: white;
+}
