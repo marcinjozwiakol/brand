@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
   const line1Ref = useRef<HTMLSpanElement>(null);
@@ -43,21 +44,19 @@ export default function Hero() {
       ref={sectionRef}
       className="relative h-dvh flex items-end overflow-hidden"
     >
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f0d] via-emerald to-emerald-900" />
+      {/* Background video — pre-baked ping-pong loop */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/hero-loop.mp4" type="video/mp4" />
+      </video>
 
-      {/* Floating logo mark */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/logotype/mark-dark.svg"
-          alt=""
-          width={400}
-          height={400}
-          className="opacity-[0.04] select-none"
-          aria-hidden="true"
-        />
-      </div>
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f0d]/90 via-emerald/50 to-emerald-900/40" />
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-12 pb-20 sm:pb-28">

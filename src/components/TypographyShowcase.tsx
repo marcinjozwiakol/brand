@@ -38,6 +38,49 @@ const hierarchy = [
   },
 ];
 
+function StatementBlock() {
+  return (
+    <div className="mt-20 -mx-6 sm:-mx-12">
+      <div className="relative overflow-hidden rounded-[2rem] mx-6 sm:mx-12 min-h-[500px] sm:min-h-[600px] flex items-center">
+        {/* Video background — pre-baked ping-pong loop */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/statement-loop.mp4" type="video/mp4" />
+        </video>
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-emerald/70" />
+
+        {/* Content */}
+        <div className="relative z-10 px-8 sm:px-16 py-16 sm:py-24 max-w-5xl">
+          <p className="text-white/40 text-xs sm:text-sm font-medium uppercase tracking-[0.2em] mb-6">
+            Brand Statement
+          </p>
+          <h2 className="font-bold font-heading text-white text-3xl sm:text-5xl lg:text-7xl leading-[1.05] tracking-tight">
+            Zero Trust Security
+            <br />
+            and Asset Management
+            <br />
+            for <span className="text-emerald-100">Private 5G/LTE</span>
+            <br />
+            <span className="text-emerald-100">Devices</span>
+          </h2>
+          <p className="mt-8 text-white/50 text-sm sm:text-base max-w-lg leading-relaxed">
+            OneLayer provides complete visibility, onboarding, and security
+            for every device on your private cellular network — from SIM
+            authentication to automated segmentation.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function TypographyShowcase() {
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -97,16 +140,8 @@ export default function TypographyShowcase() {
           ))}
         </div>
 
-        {/* Brand statement */}
-        <div className="mt-12 p-8 sm:p-12 bg-emerald rounded-[2rem]">
-          <p className="text-white/50 text-sm font-medium uppercase tracking-wider mb-4">
-            Brand Statement
-          </p>
-          <p className="font-bold font-heading text-white text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight">
-            Zero Trust Security and Asset Management for{" "}
-            <span className="text-white font-extrabold">Private 5G/LTE Devices</span>
-          </p>
-        </div>
+        {/* Brand statement — expanded with video background */}
+        <StatementBlock />
       </div>
     </section>
   );
